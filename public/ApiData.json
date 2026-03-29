@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "title": "AI Writing Pro",
+    "badge": "Best Seller",
+    "icon": "https://cdn-icons-png.flaticon.com/512/2100/2100637.png",
+    "image": "https://picsum.photos/id/1015/300/220",
+    "description": "Generate high-quality content, blogs, and marketing copy in seconds with advanced AI.",
+    "price": 29,
+    "period": "Mo",
+    "features": ["Unlimited AI generations", "50+ writing templates", "Grammar checker"],
+    "buttonText": "Buy Now"
+  },
+  {
+    "id": 2,
+    "title": "Design Templates Pack",
+    "badge": "Popular",
+    "icon": "https://cdn-icons-png.flaticon.com/512/10463/10463327.png",
+    "image": "https://picsum.photos/id/201/300/220",
+    "description": "2000+ premium templates for social media, presentations, and marketing materials.",
+    "price": 49,
+    "period": "One-Time",
+    "features": ["2000+ templates", "Monthly updates", "Commercial license"],
+    "buttonText": "Buy Now"
+  },
+  {
+    "id": 3,
+    "title": "Premium Stock Assets",
+    "badge": "New",
+    "icon": "https://cdn-icons-png.flaticon.com/512/1042/1042392.png",
+    "image": "https://picsum.photos/id/251/300/220",
+    "description": "Access millions of royalty-free photos, videos, and graphics for your projects.",
+    "price": 19,
+    "period": "Mo",
+    "features": ["10M+ assets", "Commercial use", "No attribution"],
+    "buttonText": "Buy Now"
+  },
+  {
+    "id": 4,
+    "title": "Automation Toolkit",
+    "badge": "Popular",
+    "icon": "https://cdn-icons-png.flaticon.com/512/10463/10463329.png",
+    "image": "https://picsum.photos/id/367/300/220",
+    "description": "Automate repetitive tasks and streamline your workflow with powerful tools.",
+    "price": 79,
+    "period": "Mo",
+    "features": ["50+ automations", "API access", "Custom workflows"],
+    "buttonText": "Buy Now"
+  },
+  {
+    "id": 5,
+    "title": "Resume Builder Pro",
+    "badge": "New",
+    "icon": "https://cdn-icons-png.flaticon.com/512/10463/10463314.png",
+    "image": "https://picsum.photos/id/180/300/220",
+    "description": "Create professional resumes and cover letters that land interviews.",
+    "price": 15,
+    "period": "One-Time",
+    "features": ["100+ templates", "ATS optimization", "Export to PDF"],
+    "buttonText": "Buy Now"
+  },
+  {
+    "id": 6,
+    "title": "Social Media Content Kit",
+    "badge": "Best Seller",
+    "icon": "https://cdn-icons-png.flaticon.com/512/10463/10463331.png",
+    "image": "https://picsum.photos/id/133/300/220",
+    "description": "Complete toolkit for creating engaging social media content across all platforms.",
+    "price": 39,
+    "period": "Mo",
+    "features": ["5000+ assets", "Scheduler included", "Analytics dashboard"],
+    "buttonText": "Buy Now"
+  },
+  {
+    "id": 7,
+    "title": "AI Video Generator",
+    "badge": "Trending",
+    "icon": "https://cdn-icons-png.flaticon.com/512/10463/10463328.png",
+    "image": "https://picsum.photos/id/1016/300/220",
+    "description": "Create stunning videos from text with AI avatars, voiceovers, and animations.",
+    "price": 59,
+    "period": "Mo",
+    "features": ["Unlimited video exports", "100+ templates", "Voice cloning"],
+    "buttonText": "Buy Now"
+  },
+  {
+    "id": 8,
+    "title": "Brand Kit Pro",
+    "badge": "New",
+    "icon": "https://cdn-icons-png.flaticon.com/512/10463/10463325.png",
+    "image": "https://picsum.photos/id/106/300/220",
+    "description": "Complete branding solution with logo maker, color palettes, and brand assets.",
+    "price": 35,
+    "period": "One-Time",
+    "features": ["Logo generator", "Brand guidelines", "Social media kit"],
+    "buttonText": "Buy Now"
+  },
+  {
+    "id": 9,
+    "title": "Email Marketing Suite",
+    "badge": "Popular",
+    "icon": "https://cdn-icons-png.flaticon.com/512/5968/5968890.png",
+    "image": "https://picsum.photos/id/201/300/220",
+    "description": "Build, automate and optimize email campaigns with beautiful templates.",
+    "price": 45,
+    "period": "Mo",
+    "features": ["Unlimited campaigns", "A/B testing", "Analytics & automation"],
+    "buttonText": "Buy Now"
+  },
+  {
+    "id": 10,
+    "title": "SEO & Analytics Pro",
+    "badge": "Best Seller",
+    "icon": "https://cdn-icons-png.flaticon.com/512/10463/10463330.png",
+    "image": "https://picsum.photos/id/1018/300/220",
+    "description": "Rank higher on Google with powerful SEO tools, keyword research & tracking.",
+    "price": 55,
+    "period": "Mo",
+    "features": ["Keyword research", "Rank tracker", "Competitor analysis"],
+    "buttonText": "Buy Now"
+  }
+]
