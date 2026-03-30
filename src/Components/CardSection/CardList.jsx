@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 
-const CardList = ({ card, setNumber, number }) => {
-  // console.log(card);
-  // const Card = setNumber(card.length)
-  // console.log(card);
+const CardList = ({ card, carts, setCarts, setNumber, number}) => {
+  
+  
+  console.log(carts);
+  
   
   const status = card.badge;
 
@@ -11,13 +12,15 @@ const CardList = ({ card, setNumber, number }) => {
 
 
   const handleCard = () => {
-    
+    setCarts([...card, card])
   if (BuyBtn) {
     return
   }
+  
 setNumber(number + 1) 
-
+// setData()
 setBuyBtn(true)
+
   }
 
   return (

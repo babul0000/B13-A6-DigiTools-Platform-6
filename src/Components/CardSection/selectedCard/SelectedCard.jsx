@@ -2,8 +2,8 @@ import React from 'react';
 
 const SelectedCard = () => {
     return (
-        <div>
-            <h2>selsected card</h2>
+        <div className='bg-amber-500 p-10 '>
+            crtt
         </div>
     );
 };
