@@ -1,8 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 
-const CardList = ({ card }) => {
-  console.log(card);
+const CardList = ({ card, setNumber, number }) => {
+  // console.log(card);
+  // const Card = setNumber(card.length)
+  // console.log(card);
+  
   const status = card.badge;
+
+  const [BuyBtn, setBuyBtn] = useState(false)
+
+
+  const handleCard = () => {
+    
+  if (BuyBtn) {
+    return
+  }
+setNumber(number + 1) 
+
+setBuyBtn(true)
+  }
 
   return (
     <div>
@@ -92,12 +108,24 @@ const CardList = ({ card }) => {
             </li>
           </ul>
           <div className="mt-3">
-            <button className="btn bg-gradient-to-r from-[#4F39F6] to-[#9514FA] btn-block rounded-full text-white">
-              Buy Now
+
+            <button
+
+            onClick={handleCard }
+
+            className={`btn ${BuyBtn === true ? "bg-gradient-to-r from-[#cc5e09] to-[#479408] btn-block rounded-full text-white"
+            
+            : "bg-gradient-to-r from-[#4F39F6] to-[#7809cc] btn-block rounded-full text-white"} `}>
+
+              {BuyBtn === true ? "added to cart ": "Buy Now" }
+
             </button>
           </div>
         </div>
       </div>
+
+
+      { }
     </div>
   );
 };
