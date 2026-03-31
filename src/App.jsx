@@ -1,39 +1,46 @@
+import { useState } from "react";
+import "./App.css";
 
-import { useState } from 'react'
-import './App.css'
-import CardSection from './Components/CardSection/CardSection'
-import Hero from './Components/Navbar/Hero/Hero'
-import Navbar from './Components/Navbar/Navbar'
-import Primium from './Components/Primium/Primium'
-import Ratting from './Components/Ratting/Ratting'
-import SelectedCard from './Components/CardSection/selectedCard/SelectedCard'
+import Hero from "./components/Navbar/Hero/Hero";
+
+import Ratting from "./components/Ratting/Ratting";
+import CardSection from "./components/CardSection/CardSection";
+import Navbar from "./components/navbar/Navbar";
+import SelectedCard from "./components/CardSection/selectedCard/SelectedCard";
+import Primium from "./components/Primium/Primium";
 
 function App() {
-  const [number, setNumber] = useState(0)
-  const [active, setActive] = useState("Products")
+  const [number, setNumber] = useState(0);
+  const [active, setActive] = useState("Products");
+  const [carts, setcarts] = useState([]);
   console.log(active);
-  
+  // console.log(carts);
 
-  
-  
-  const [data, setData] = useState([])
+  const [data, setData] = useState([]);
 
   return (
     <>
-      <Navbar number={number}/>
-      <Hero/>
-      <Ratting/>
+      <Navbar number={number} />
+      <Hero />
+      <Ratting />
 
+      <Primium setActive={setActive} number={number} />
 
-      <Primium setActive={setActive} number={number}/>
+      {active === "Products" ? (
+        <CardSection
+          setNumber={setNumber}
+          number={number}
+          active={active}
+          data={data}
+          setData={setData}
+          carts={carts}
+          setcarts={setcarts}
+        />
+      ) : null}
 
-
-
-      { active === "Products" ? <CardSection setNumber={setNumber} number={number} active={active} data={data} setData={setData}/>: null } 
-      
-      {active === "cart" ? <SelectedCard/> : null}
+      {active === "cart" ? <SelectedCard carts={carts} /> : null}
     </>
-  )
+  );
 }
 
-export default App
+export default App;

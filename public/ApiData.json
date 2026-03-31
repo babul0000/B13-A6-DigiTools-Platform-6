@@ -106,6 +106,17 @@
     "period": "Mo",
     "features": ["Unlimited campaigns", "A/B testing", "Analytics & automation"],
     "buttonText": "Buy Now"
+  },
+  {
+    "id": 10,
+    "title": "SEO & Analytics Pro",
+    "badge": "Best Seller",
+    "icon": "https://cdn-icons-png.flaticon.com/512/10463/10463330.png",
+    "image": "https://picsum.photos/id/1018/300/220",
+    "description": "Rank higher on Google with powerful SEO tools, keyword research & tracking.",
+    "price": 55,
+    "period": "Mo",
+    "features": ["Keyword research", "Rank tracker", "Competitor analysis"],
+    "buttonText": "Buy Now"
   }
-  
 ]

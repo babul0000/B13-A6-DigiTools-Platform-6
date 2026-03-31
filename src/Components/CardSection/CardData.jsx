@@ -1,20 +1,25 @@
-import React, { useEffect, useState } from "react";
-import CardData from "./cardData";
+import React from "react";
+import CardList from "./CardList";
 
-const CardSection = ({ setNumber, number }) => {
-  const [data, setData] = useState([]);
-
-  useEffect(() => {
-    fetch("/ApiData.json")
-      .then((res) => res.json())
-      .then((fetchedData) => setData(fetchedData))
-      .catch((err) => console.error("Error loading data:", err));
-  }, []);
+const CardData = ({ itemsCard, setNumber, number, carts, setcarts }) => {
+  if (!Array.isArray(itemsCard) || itemsCard.length === 0) {
+    return <p className="text-center mt-10">Loading products...</p>;
+  }
 
   return (
-    <div>
-      <CardData itemsCard={data} setNumber={setNumber} number={number} />
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-4 w-11/12 mx-auto">
+      {itemsCard.map((card) => (
+        <CardList
+          key={card.id}
+          card={card}
+          setNumber={setNumber}
+          number={number}
+          carts={carts}
+          setcarts={setcarts}
+        />
+      ))}
     </div>
   );
 };
-export default CardSection;
+
+export default CardData;

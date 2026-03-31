@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import CardData from "./cardData";
+import CardData from "./CardData";
 
-const CardSection = ({ setNumber, number }) => {
+const CardSection = ({ setNumber, number, carts, setcarts }) => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
@@ -13,7 +13,8 @@ const CardSection = ({ setNumber, number }) => {
 
   return (
     <div>
-      <CardData itemsCard={data} setNumber={setNumber} number={number} />
+      <CardData itemsCard={data} setNumber={setNumber} number={number} carts={carts}
+          setcarts={setcarts} />
     </div>
   );
 };
