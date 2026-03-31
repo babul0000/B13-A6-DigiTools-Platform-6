@@ -1,7 +1,7 @@
 import React from "react";
 
-const Navbar = ({number}) => {
-    return (
+const Navbar = ({ number }) => {
+  return (
     <div className="navbar bg-base-100 shadow-sm px-4 sticky top-1 z-1">
       {/* 1. Navbar Start: Logo & Mobile Menu */}
       <div className="navbar-start">
@@ -26,11 +26,21 @@ const Navbar = ({number}) => {
             tabIndex="-1"
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
           >
-            <li><a>Products</a></li>
-            <li><a>Features</a></li>
-            <li><a>Pricing</a></li>
-            <li><a>Testimonials</a></li>
-            <li><a>FAQ</a></li>
+            <li>
+              <a>Products</a>
+            </li>
+            <li>
+              <a>Features</a>
+            </li>
+            <li>
+              <a>Pricing</a>
+            </li>
+            <li>
+              <a>Testimonials</a>
+            </li>
+            <li>
+              <a>FAQ</a>
+            </li>
           </ul>
         </div>
         <a className="btn btn-ghost text-2xl font-bold ">
@@ -41,11 +51,21 @@ const Navbar = ({number}) => {
       {/* 2. Navbar Center: Desktop Menu */}
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
-          <li><a>Products</a></li>
-          <li><a>Features</a></li>
-          <li><a>Pricing</a></li>
-          <li><a>Testimonials</a></li>
-          <li><a>FAQ</a></li>
+          <li>
+            <a>Products</a>
+          </li>
+          <li>
+            <a>Features</a>
+          </li>
+          <li>
+            <a>Pricing</a>
+          </li>
+          <li>
+            <a>Testimonials</a>
+          </li>
+          <li>
+            <a>FAQ</a>
+          </li>
         </ul>
       </div>
 
@@ -66,16 +86,17 @@ const Navbar = ({number}) => {
               d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
             />
           </svg>
-          <span className="w-6 h-6 flex justify-center items-center  p-1 rounded-full badge-md bg-gray-200  indicator-item">{number}</span>
+          <span className="w-6 h-6 flex justify-center items-center  p-1 rounded-full badge-md bg-gray-200  indicator-item">
+            {number}
+          </span>
         </div>
         <span>
-            <button className="px-2 border-1 border-gray-200">Login</button>
+          <button className="px-2 border-1 border-gray-200">Login</button>
         </span>
         <a className="btn bg-[#4F39F6] text-white rounded-full">Get Started</a>
-        
       </div>
     </div>
-    );
+  );
 };
 
 export default Navbar;
