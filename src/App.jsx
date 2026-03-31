@@ -12,8 +12,8 @@ function App() {
   const [number, setNumber] = useState(0)
   const [active, setActive] = useState("Products")
   console.log(active);
-  const [carts, setCarts] = useState([]);
-  console.log(carts);
+  
+
   
   
   const [data, setData] = useState([])
@@ -29,7 +29,7 @@ function App() {
 
 
 
-      { active === "Products" ? <CardSection setNumber={setNumber} number={number} active={active} data={data} carts={carts} setCarts={setCarts} setData={setData}/>: null } 
+      { active === "Products" ? <CardSection setNumber={setNumber} number={number} active={active} data={data} setData={setData}/>: null } 
       
       {active === "cart" ? <SelectedCard/> : null}
     </>

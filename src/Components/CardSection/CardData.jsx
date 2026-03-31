@@ -1,23 +1,20 @@
-import React, { use, useState } from 'react';
-import CardList from './CardList';
+import React, { useEffect, useState } from 'react';
+import CardData from './cardData';
 
-const CardData = ({itemsCard, carts, setCarts, setNumber, number, active, data, setData }) => {
+const CardSection = ({ setNumber, number }) => {
+    const [data, setData] = useState([]);
 
-    // const [isSubscribe, setIsSubscribe] = useState(false)
-    const item = use(itemsCard)
-console.log();
+    useEffect(() => {
+        fetch("/ApiData.json")
+            .then(res => res.json())
+            .then(fetchedData => setData(fetchedData))
+            .catch(err => console.error("Error loading data:", err));
+    }, []);
 
-    setNumber(item.length)
-    
-    data = item;
-    
-    return(
-        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-11/12 mx-auto gap-3'>
-            {
-                item.map(card => <CardList key={card.id} card={card} setNumber={setNumber} number={number} active={active} data={data} setData={setData} carts={carts} setCarts={setCarts}/>)
-            }
+    return (
+        <div>
+            <CardData itemsCard={data} setNumber={setNumber} number={number} />
         </div>
     );
 };
-
-export default CardData;
+export default CardSection;
