@@ -38,7 +38,7 @@ function App() {
         />
       ) : null}
 
-      {active === "cart" ? <SelectedCard carts={carts} /> : null}
+      {active === "cart" ? <SelectedCard carts={carts} setcarts={setcarts} /> : null}
     </>
   );
 }

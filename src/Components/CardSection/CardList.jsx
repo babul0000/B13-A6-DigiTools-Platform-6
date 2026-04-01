@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { toast } from "react-toastify";
 
 const CardList = ({ card, setNumber, number, carts, setcarts }) => {
   const [isAdded, setIsAdded] = useState(false);
@@ -7,9 +8,11 @@ const CardList = ({ card, setNumber, number, carts, setcarts }) => {
   const handleClick = () => {
     if (!isAdded) {
       setIsAdded(true);
+      toast.success("Added to Cart");
       if (setNumber) {
         setNumber(number + 1);
       }
+
       if (setcarts) {
         setcarts([...carts, card]);
       }
