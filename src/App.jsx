@@ -8,6 +8,9 @@ import CardSection from "./components/CardSection/CardSection";
 import Navbar from "./components/navbar/Navbar";
 import SelectedCard from "./components/CardSection/selectedCard/SelectedCard";
 import Primium from "./components/Primium/Primium";
+import Footer from "./components/footer/Footer";
+import Workflow from "./components/workflow/Workflow";
+import Pricing from "./components/pricing/Pricing";
 
 function App() {
   const [number, setNumber] = useState(0);
@@ -38,7 +41,13 @@ function App() {
         />
       ) : null}
 
-      {active === "cart" ? <SelectedCard carts={carts} setcarts={setcarts} /> : null}
+      {active === "cart" ? (
+        <SelectedCard carts={carts} setcarts={setcarts} setNumber={setNumber} />
+      ) : null}
+
+      <Pricing/>
+      <Workflow/>
+      <Footer/>
     </>
   );
 }

@@ -1,7 +1,7 @@
 import { ShoppingCart } from "lucide-react";
 import { toast } from "react-toastify";
 
-const SelectedCard = ({ carts = [], setcarts }) => {
+const SelectedCard = ({ carts = [], setcarts, setNumber }) => {
   console.log("Cart items:", carts);
 
   const totalPrice = carts.reduce((sum, item) => sum + item.price, 0);
@@ -9,12 +9,13 @@ const SelectedCard = ({ carts = [], setcarts }) => {
 
   const handlePayment = () => {
     setcarts([]);
+    if (setNumber) setNumber(0);
     toast.success("Payment successful!");
-    
   };
 
   const handleRemoveItem = (id) => {
     setcarts((prev) => prev.filter((item) => item.id !== id));
+    if (setNumber) setNumber((prev) => Math.max(0, prev - 1));
     toast.error("Item removed from cart!");
   };
 
@@ -26,7 +27,10 @@ const SelectedCard = ({ carts = [], setcarts }) => {
 
       {carts.length === 0 ? (
         <div className="bg-[#627382] p-10 text-white rounded-lg text-center ">
-          <h2 className="flex justify-center mb-2"> <ShoppingCart /></h2>
+          <h2 className="flex justify-center mb-2">
+            {" "}
+            <ShoppingCart />
+          </h2>
           <h2>Your cart is empty.</h2>
         </div>
       ) : (
