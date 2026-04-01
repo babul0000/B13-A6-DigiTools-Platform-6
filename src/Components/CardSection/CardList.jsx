@@ -21,7 +21,7 @@ const CardList = ({ card, setNumber, number, carts, setcarts }) => {
 
   return (
     <div>
-      <div className="card w-96 bg-base-100 shadow-xl ">
+      <div className="card bg-base-100 shadow-xl ">
 
 
         <div className="card-body ">
