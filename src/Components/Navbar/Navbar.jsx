@@ -90,9 +90,7 @@ const Navbar = ({ number }) => {
             {number}
           </span>
         </div>
-        <span>
-          <button className="px-2 border-1 border-gray-200">Login</button>
-        </span>
+        
         <a className="btn bg-[#4F39F6] text-white rounded-full">Get Started</a>
       </div>
     </div>
