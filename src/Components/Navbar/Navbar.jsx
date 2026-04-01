@@ -2,7 +2,7 @@ import React from "react";
 
 const Navbar = ({ number }) => {
   return (
-    <div className="navbar bg-base-100 shadow-sm px-4 sticky top-0 z-1">
+    <div className="navbar bg-base-100 shadow-sm px-4 sticky top-0 z-12">
       {/* 1. Navbar Start: Logo & Mobile Menu */}
       <div className="navbar-start">
         <div className="dropdown">

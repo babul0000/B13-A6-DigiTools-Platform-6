@@ -3,10 +3,10 @@ return (
     <section className="bg-[#F8FBFF] py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center">
-            <h2 className="text-4xl font-bold tracking-tight text-slate-950 sm:text-5xl">
+            <h2 className="text-2xl md:text-4xl font-bold tracking-tight text-slate-950 sm:text-5xl">
             Simple, Transparent Pricing
             </h2>
-            <p className="mx-auto mt-4 max-w-2xl text-lg text-slate-500">
+            <p className="mx-auto mt-4  md:text-lg text-slate-500">
             Choose the plan that fits your needs. Upgrade or downgrade anytime.
             </p>
         </div>

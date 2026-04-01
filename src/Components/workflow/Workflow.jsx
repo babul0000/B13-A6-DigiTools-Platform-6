@@ -1,6 +1,6 @@
 const Workflow= () => {
     return (
-        <section className="bg-primary w-full py-12 px-6">
+        <section className="bg-primary w-full py-20 px-6 ">
             <div className="container mx-auto text-center text-white">
                 
                 {/* Heading */}
